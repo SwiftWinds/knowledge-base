@@ -1,124 +1,119 @@
 # 1. Safety
 
-## Ear protection
+## i. Ear protection
 
 - Earplugs are a must! It might not seem that loud, but it's loud enough that staying there for several hours could lead to temporary or even permanent ear damage.
 
 
-## Hand protection
+## ii. Hand protection
 
-- Be sure to wear gloves while carrying or moving servers. Not only to protect your skin but 
+- Be sure to wear gloves while carrying or moving servers. Not only to protect your skin but to provide better grip 
   
-## Heavy servers
+## iii. Heavy servers
 
 - For 3U servers or heavy 2U servers (or if you're moving several servers), use the server lift.
 
 # 2. Server
 
-## General
+## i. General
 
-### Installation
+### a. Installation
 
-- Don’t put server backwards
+- Don’t put server backwards. Look at other servers in the cabinet or row to find correct direction.
 - Make sure all the racks are in the same level
 
-### Wiring
+### b. Wiring
 
 - **MOST IMPORTANT THING**: Be sure to follow guidelines for wiring. If none are make sure to communicate with others that are wiring and create guidelines
+    - Server
+        - All the IPMI cable goes from the top right and wiring through the bottom of the server.
+        - All the IPMI cable goes from the top right and wiring through the bottom of the server.
+    - Switches
+        - All the IPMI cable goes from the top right opening and wiring through the bottom of the switches.
+        - All the optical cable goes from the top left opening and wiring from the top of the switches.
 - Try to keep any ports and lights easily viewable for future use. 
-- If wires 
 
-## Dell
+## ii. Dell
 
 - 1 node: slide out the server until it gets stuck. Then press the light blue parts on both sides of the server until it clicks, then continue sliding out
 - 4 nodes: press the tab on the IO side of the server, then slide out.
 
-## Supermicro
+## iii. Supermicro
+- 4 nodes: Press tab 
 
 - 12 nodes: Counting is increasing left to right starting from 1. To take out the node press the tab at the top of the node and pull. In order to install Hard drives for these nodes you need to pull out the entire node.
 
 # 3. Switch 
 
-## General
+## i. General
 
-## Wire types
+## ii. Wire types
 
-## Module types
+## iii. Module types
 
 # 4. Parts
 
-## General
+## i. General
 
-## CPU
+- always put back to Inventory
 
-### Positioning
+## ii. CPU
 
-### Thermal paste
+### a. Positioning
+- Both the CPU and the CPU slot have a positioning triangle. When installing make sure the triangles are in the same direction.
+### b. Thermal paste
+- Make sure that the CPU has some thermal paste applied to the top.
+## iii. RAM
 
-## RAM
+### a. General
 
-### General
-
-- There's a couple things that you need to pay attention when installing RAM into server
-
-
-### DDR3 (PC3)
-
-### DDR4 (PC4)
-
-## Disk
-
-### General
-
-### SSD
-
-### HDD
-
-### M.2
-Attention: Put the replaced into the inventory bins
-HDD vs. SSD vs. M.2
-You can see the circuits under the HDD:
-​​
-
-while SSD is just a black case on both sides:
+- There's a couple things that you need to pay attention when installing RAM into server: Whether it's DDR3 or DDR4, How much memory it provides, and the speed of the ram. This information is all listed on the sticker attached
 
 
-M.2 (a special, faster SSD that goes on the PCIe slot) look like this:
+### b. DDR3 (PC3)
+- The easiest way to identify DDR3 is by the sticker. If there is no sticker, you can tell by the distance between the prongs. The gap in DDR3 is closer to the edge than in DDR4
 
+### c. DDR4 (PC4)
 
+- Gap in DDR4 is closer to center of RAM stick compared to the DDR3 sticks.
 
-How to install M.2
+## iv. Disk
 
-RAM
-How to install RAM
-Different types of RAM
-CPU
+### a. General
 
+### b. SSD
 
+### c. HDD
+
+- Don't use Seagate ST035 or ST048 disks
+
+### d. M.2
+
+- Remember to put in the correct slot
 
 # 5. Software
 
-## IPMI
+## i. IPMI
 
-## Ping test
+- [Node identification]()
 
-### Mac
-
-### Windows
-
-## SSH
-
-Cyxtera data center master computer
-
-IP address:	  154.36.250.164
-
-Port: 		  19080
-
-Username  	  root
-
-Password: 	  vr3tbacqad
+- [Steps for doing IPMI](https://docs.google.com/document/d/1aHn1oQaDHm5yOgLh7WIOlRoP-4z-t4HVKkUXfEiADAg/edit)
 
 
-## Flash drive (for setting IPMI username/password)
+## ii. Ping test
 
-## BIOS update
+### a. Mac
+
+### b. Windows
+
+## iii. SSH
+
+1. Open your terminal (`cmd` on Windows and `Terminal` on macOS) and type: `ssh -p 19080 root@154.36.250.164`. It should look like this:
+![SSH screenshot](https://lh4.googleusercontent.com/yrFKo2DtJO-v4gohdR-cPH-XgF6F61WVlI3o2WyXvQAxbpdVZjgikufEvbsEyVeyKD0sG66gRW1qRAjUuMoEy98sXyMCPGxM-QKlvtXcWWW5UAHAks0Wqy8pAf5KG65W5DbGJIc=s0)
+2. Enter password `vr3tbacqad`
+3. Enter `./check.sh [name of the rack]`. It should look like this:
+![check.sh screenshot](https://lh6.googleusercontent.com/fbxd1MLGC_rU0gfuqaJmBdcykEEyDlryLcbmDDsLGhqOm0wJIiNx7JQZ0AKL8y4-8h0jHbnmDhccbF1s7wYsBHiIO9EVDmhVJJsR88PoJXDOI9ctMvzlvdoAywkn5MIH4gwDGv0=s0)
+
+## iv. Flash drive (for setting IPMI username/password)
+
+## v. BIOS update
