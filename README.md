@@ -56,7 +56,8 @@
 ## i. General
 
 - always put back to Inventory
-
+  
+- link to the inventory [Inventory](http://154.196.160.212:5000/oo/r/626452047190864799#tid=1)
 ## ii. CPU
 
 ### a. Positioning
