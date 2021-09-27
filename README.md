@@ -49,8 +49,14 @@
 
 ## ii. Wire types
 
+- yellow cable are usually 单模
+
 ## iii. Module types
 
+- 850nm 单模
+- 1310nm 单模 10km
+- 1550nm 单模 40km
+  
 # 4. Parts
 
 ## i. General
@@ -68,7 +74,7 @@
 
 ### a. General
 
-- There's a couple things that you need to pay attention when installing RAM into server: Whether it's DDR3 or DDR4, How much memory it provides, and the speed of the ram. This information is all listed on the sticker attached
+- There's a couple things that you need to pay attention when installing RAM into server: Whether it's DDR3 or DDR4, How much memory it provides, and the speed of the ram. This information is all listed on the sticker attached (10600 and 12800)
 
 
 ### b. DDR3 (PC3)
@@ -78,6 +84,9 @@
 
 - Gap in DDR4 is closer to center of RAM stick compared to the DDR3 sticks.
 
+### d. EDIMM & RDIMM
+
+- make sure when installing RAMs(Especially HUAWEI servers, pay attention to the ram see if it has the ECC on it)
 ## iv. Disk
 
 ### a. General
