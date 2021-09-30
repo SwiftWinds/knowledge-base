@@ -116,6 +116,9 @@
 
 ### b. Windows
 
+- open the network setting -> then open ethernet setting-> change the ip address, ip mask and subnet address(remember to choose the ip that doesn't in use of this cabinet)
+- then open `cmd` , type `ping ...... -t` to see if the packages were sent. Type `ctrl c` to quit testing.
+
 ## iii. SSH
 
 1. Open your terminal (`cmd` on Windows and `Terminal` on macOS) and type: `ssh -p 19080 root@154.36.250.164`. It should look like this:
