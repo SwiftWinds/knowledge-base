@@ -56,7 +56,13 @@
 - 850nm 单模
 - 1310nm 单模 10km
 - 1550nm 单模 40km
-  
+
+![光纤](https://github.com/dingbangchen/refactored-octo-succotash/blob/main/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202021-10-04%20180411.png) 
+
+![光纤2](https://github.com/dingbangchen/refactored-octo-succotash/blob/main/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202021-10-04%20180459.png)
+
+![模块](https://github.com/dingbangchen/refactored-octo-succotash/blob/main/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202021-10-04%20180437.png)
+
 # 4. Parts
 
 ## i. General
