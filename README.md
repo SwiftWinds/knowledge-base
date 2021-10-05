@@ -53,7 +53,7 @@
 
 ## iii. Module types
 
-- 850nm 单模
+- 850nm 多模
 - 1310nm 单模 10km
 - 1550nm 单模 40km
 
