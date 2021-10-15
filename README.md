@@ -115,6 +115,9 @@
 
 - [Steps for doing IPMI](https://docs.google.com/document/d/1aHn1oQaDHm5yOgLh7WIOlRoP-4z-t4HVKkUXfEiADAg/edit)
 
+- Change username and password:
+  
+  `ipmicfg -user add 2 USERNAME PASSWORD 4 ` 
 
 ## ii. Ping test
 
